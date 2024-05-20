@@ -9,7 +9,7 @@ import Console from "/public/console.svg";
 import Mui from "/public/mui.svg";
 import { NavItem } from "./nav-item";
 
-export const NavBar = () => {
+export const VerticalNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuClick = () => {
