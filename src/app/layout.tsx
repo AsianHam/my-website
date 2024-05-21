@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-shark">
         <HorizontalNavBar />
-        <main className="ml-20">{children}</main>
+        <main className="pl-20">{children}</main>
       </body>
     </html>
   );
