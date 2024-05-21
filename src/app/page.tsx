@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { Caret } from "@/components/caret";
 import { DeveloperTyping } from "@/components/developer-typing";
 
 export default function Home() {
