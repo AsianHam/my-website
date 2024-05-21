@@ -50,7 +50,7 @@ export const HorizontalNavBar = ({
           Contact
         </button>
         <Link href='/components' className='hover:text-torch-red'>
-          Component
+          Components
         </Link>
       </div>
     </nav>

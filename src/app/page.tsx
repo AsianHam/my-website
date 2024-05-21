@@ -1,8 +1,10 @@
 'use client';
 
+import { Email } from '@/components/email';
 import { HorizontalNavBar } from '@/components/horizontal-nav-bar';
 import { AboutMeSection } from '@/components/pages/about-me-section';
 import { IntroSection } from '@/components/pages/intro-section';
+import { SocialMedia } from '@/components/social-media';
 import { useRef } from 'react';
 
 export default function Home() {
@@ -16,7 +18,9 @@ export default function Home() {
         portfolioRef={portfolioRef}
         contactRef={contactRef}
       />
-      <div className='pl-20'>
+      <SocialMedia />
+      <Email />
+      <div className='px-28'>
         <IntroSection />
         <AboutMeSection ref={aboutRef} />
       </div>

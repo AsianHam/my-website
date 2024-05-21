@@ -8,7 +8,7 @@ export const IntroSection = () => (
       <h3 className='text-5xl text-alabaster'>
         I&apos;m a <DeveloperTyping />
       </h3>
-      <h4 className='text-xl text-iron w-2/3'>
+      <h4 className='text-xl text-iron w-3/4'>
         I am a software engineer based in Charlotte, NC, dedicated to building
         first-class applications and user focused digital experiences.
       </h4>
