@@ -12,8 +12,12 @@ export const HorizontalNavBar = ({
   portfolioRef: RefObject<HTMLElement>;
   contactRef: RefObject<HTMLElement>;
 }) => {
-  const handleClick = (ref: RefObject<HTMLElement>) => {
-    console.log('scroll', ref, aboutRef);
+  const handleClick = (ref: RefObject<HTMLElement>, hash: string) => {
+    if (history.pushState) {
+      history.pushState(null, '', hash);
+    } else {
+      location.hash = hash;
+    }
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
@@ -28,19 +32,19 @@ export const HorizontalNavBar = ({
       </span>
       <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
         <button
-          onClick={() => handleClick(aboutRef)}
+          onClick={() => handleClick(aboutRef, '#about-me')}
           className='hover:text-torch-red'
         >
           About
         </button>
         <button
-          onClick={() => handleClick(portfolioRef)}
+          onClick={() => handleClick(portfolioRef, '#portfolio')}
           className='hover:text-torch-red'
         >
           Portfolio
         </button>
         <button
-          onClick={() => handleClick(contactRef)}
+          onClick={() => handleClick(contactRef, '#contact-me')}
           className='hover:text-torch-red'
         >
           Contact
