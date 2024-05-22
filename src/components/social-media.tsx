@@ -13,13 +13,13 @@ export const SocialMedia = () => (
     />
     <NavItem
       icon={<Linkedin className='text-iron w-full h-full' />}
-      href='https://linkedin/in/abrahamoh'
+      href='https://linkedin.com/in/abrahamoh'
       newTab
       iconSize='h-5 w-5'
     />
     <NavItem
       icon={<Codepen className='text-iron w-full h-full' />}
-      href='https://linkedin/in/abrahamoh'
+      href='https://codepen.io/Abraham-Oh'
       newTab
       iconSize='h-6 w-6'
     />
