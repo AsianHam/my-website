@@ -10,7 +10,7 @@ interface ProjectProps {
 export const Project = ({ href, title, description }: ProjectProps) => (
   <Link
     href={href}
-    className='flex group aspect-square shadow-md bg-gradient-to-br from-black to-shark duration-500 hover:-translate-y-4 relative'
+    className='flex group w-full shadow-md bg-gradient-to-br from-black to-shark duration-500 hover:-translate-y-4 relative'
     target='_blank'
   >
     <span className='flex flex-col w-full m-12'>

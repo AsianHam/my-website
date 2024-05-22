@@ -27,6 +27,11 @@ const config: Config = {
       spacing: {
         '30': '7.5rem',
       },
+      screens: {
+        '1440': '1440px',
+        '1200': '1200px',
+        '768': '768px',
+      },
     },
   },
   plugins: [],
