@@ -23,6 +23,6 @@ export const SocialMedia = () => (
       newTab
       iconSize='h-6 w-6'
     />
-    <div className='bg-iron w-0.5 h-20' />
+    <div className='bg-iron/70 w-0.5 h-20' />
   </div>
 );
