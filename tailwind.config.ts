@@ -22,9 +22,15 @@ const config: Config = {
         'regent-gray': '#929AA2',
         shark: '#212428',
         'torch-red': '#ff014f',
+        'black-gradeint': 'linear-gradient(135deg, #000000, #212428)',
       },
       spacing: {
         '30': '7.5rem',
+      },
+      screens: {
+        '1440': '1440px',
+        '1200': '1200px',
+        '768': '768px',
       },
     },
   },
