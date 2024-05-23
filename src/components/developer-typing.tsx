@@ -45,9 +45,9 @@ export const DeveloperTyping = () => {
   });
 
   return (
-    <>
+    <span className='pt-2 768:pt-0'>
       <motion.span>{displayText}</motion.span>
       <Caret />
-    </>
+    </span>
   );
 };
