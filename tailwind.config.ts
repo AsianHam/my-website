@@ -22,7 +22,7 @@ const config: Config = {
         'regent-gray': '#929AA2',
         shark: '#212428',
         'torch-red': '#ff014f',
-        'black-gradeint': 'linear-gradient(135deg, #000000, #212428)',
+        'black-gradient': 'linear-gradient(135deg, #000000, #212428)',
       },
       spacing: {
         '30': '7.5rem',

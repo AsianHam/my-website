@@ -4,10 +4,10 @@ import { Project } from '../project';
 export const PortfolioSection = forwardRef<HTMLElement>((_props, ref) => (
   <section
     id='portfolio'
-    className='flex flex-col justify-center w-full h-full 768:px-18 1200:px-28 1440:px-40 py-40'
+    className='flex flex-col justify-center w-full h-full 768:px-18 1200:px-28 1440:px-40 py-28 768:py-40'
     ref={ref}
   >
-    <h2 className='text-4xl text-torch-red'>My Portfolio</h2>
+    <h2 className='text-4xl text-torch-red self-center'>My Portfolio</h2>
     <div className='grid grid-cols-1 768:grid-cols-2 1440:grid-cols-3 w-full h-fit place-content-evenly gap-8 pt-16'>
       <Project
         href='https://github.com/AsianHam/calendarAdd'
