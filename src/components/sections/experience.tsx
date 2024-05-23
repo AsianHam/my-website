@@ -8,7 +8,7 @@ export const ExperienceSection = forwardRef<HTMLElement>((_props, ref) => (
     ref={ref}
   >
     <h2 className='text-torch-red text-4xl'>Experience</h2>
-    <div className='768:px-20 py-20 flex flex-col gap-8'>
+    <div className='pt-10 768:px-20 768:pt-20 768:pb-20 flex flex-col gap-8'>
       <ExperienceCard
         tagText='2022'
         title='Full-Stack Software Developer'
