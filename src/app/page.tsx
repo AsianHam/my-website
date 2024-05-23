@@ -2,6 +2,7 @@
 
 import { Email } from '@/components/email';
 import { HorizontalNavBar } from '@/components/horizontal-nav-bar';
+import { ContactMeSection } from '@/components/sections/contact-me-section';
 import { ExperienceSection } from '@/components/sections/experience';
 import { IntroSection } from '@/components/sections/intro-section';
 import { PortfolioSection } from '@/components/sections/portfolio-section';
@@ -25,6 +26,7 @@ export default function Home() {
         <IntroSection />
         <ExperienceSection ref={experienceRef} />
         <PortfolioSection ref={portfolioRef} />
+        <ContactMeSection ref={contactRef} />
       </div>
     </>
   );
