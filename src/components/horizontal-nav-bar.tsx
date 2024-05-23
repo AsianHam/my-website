@@ -4,11 +4,11 @@ import Java from '/public/java.svg';
 import { RefObject } from 'react';
 
 export const HorizontalNavBar = ({
-  aboutRef,
+  experienceRef,
   portfolioRef,
   contactRef,
 }: {
-  aboutRef: RefObject<HTMLElement>;
+  experienceRef: RefObject<HTMLElement>;
   portfolioRef: RefObject<HTMLElement>;
   contactRef: RefObject<HTMLElement>;
 }) => {
@@ -32,10 +32,10 @@ export const HorizontalNavBar = ({
       </span>
       <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
         <button
-          onClick={() => handleClick(aboutRef, '#about-me')}
+          onClick={() => handleClick(experienceRef, '#portfolio')}
           className='hover:text-torch-red'
         >
-          About
+          Experience
         </button>
         <button
           onClick={() => handleClick(portfolioRef, '#portfolio')}

@@ -4,7 +4,7 @@ import { Project } from '../project';
 export const PortfolioSection = forwardRef<HTMLElement>((_props, ref) => (
   <section
     id='portfolio'
-    className='flex flex-col justify-center w-full h-full px-18 1200:px-28 1440:px-40 py-40'
+    className='flex flex-col justify-center w-full h-full 768:px-18 1200:px-28 1440:px-40 py-40'
     ref={ref}
   >
     <h2 className='text-4xl text-torch-red'>My Portfolio</h2>
