@@ -21,7 +21,7 @@ export default function Home() {
       />
       <SocialMedia />
       <Email />
-      <div className='px-28'>
+      <div className='px-16 768:px-28'>
         <IntroSection />
         <ExperienceSection ref={experienceRef} />
         <PortfolioSection ref={portfolioRef} />
