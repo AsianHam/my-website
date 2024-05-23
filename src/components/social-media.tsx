@@ -4,7 +4,7 @@ import Linkedin from '/public/linkedin.svg';
 import Codepen from '/public/codepen.svg';
 
 export const SocialMedia = () => (
-  <div className='fixed hidden 768:block left-0 bottom-0 flex flex-col w-20 items-center gap-6 opacity-70'>
+  <div className='fixed hidden 768:flex left-0 bottom-0 flex flex-col w-20 items-center gap-6 opacity-70'>
     <NavItem
       icon={<Github className='text-iron w-full h-full' />}
       href='https://github.com/AsianHam'
