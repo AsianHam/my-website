@@ -1,5 +1,4 @@
 import { forwardRef } from 'react';
-import { Tag } from '../tag';
 import { ExperienceCard } from '../experience-card';
 
 export const ExperienceSection = forwardRef<HTMLElement>((_props, ref) => (
