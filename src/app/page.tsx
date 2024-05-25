@@ -2,6 +2,7 @@
 
 import { Email } from '@/components/email';
 import { HorizontalNavBar } from '@/components/horizontal-nav-bar';
+import { MobileNavBar } from '@/components/mobile-nav-bar';
 import { ContactMeSection } from '@/components/sections/contact-me-section';
 import { ExperienceSection } from '@/components/sections/experience';
 import { IntroSection } from '@/components/sections/intro-section';
@@ -16,6 +17,11 @@ export default function Home() {
   return (
     <>
       <HorizontalNavBar
+        experienceRef={experienceRef}
+        portfolioRef={portfolioRef}
+        contactRef={contactRef}
+      />
+      <MobileNavBar
         experienceRef={experienceRef}
         portfolioRef={portfolioRef}
         contactRef={contactRef}
