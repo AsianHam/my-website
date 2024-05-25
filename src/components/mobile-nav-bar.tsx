@@ -61,7 +61,7 @@ export const MobileNavBar = ({
           <div className='flex flex-col justify-between w-full h-full'>
             <span className='flex flex-col w-full items-end text-iron text-2xl gap-8 pr-8 mt-4'>
               <button
-                onClick={() => handleItemClick(experienceRef, '#portfolio')}
+                onClick={() => handleItemClick(experienceRef, '#experience')}
                 className='hover:text-torch-red'
               >
                 Experience

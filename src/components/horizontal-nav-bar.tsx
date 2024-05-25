@@ -32,7 +32,7 @@ export const HorizontalNavBar = ({
       </span>
       <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
         <button
-          onClick={() => handleClick(experienceRef, '#portfolio')}
+          onClick={() => handleClick(experienceRef, '#experience')}
           className='hover:text-torch-red'
         >
           Experience
