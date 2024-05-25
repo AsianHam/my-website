@@ -21,7 +21,7 @@ export const HorizontalNavBar = ({
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <nav className='flex fixed w-full h-20 justify-between bg-shark drop-shadow-md z-50'>
+    <nav className='hidden 768:flex fixed w-full h-20 justify-between bg-shark drop-shadow-md z-50'>
       <span className='flex py-4 pl-8'>
         <NavItem
           icon={<Java className='h-full w-full text-torch-red' />}
