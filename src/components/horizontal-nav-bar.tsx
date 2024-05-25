@@ -28,6 +28,7 @@ export const HorizontalNavBar = ({
           href='/'
           iconSize='h-full'
           linkClassName='h-full'
+          label='home'
         />
       </span>
       <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
