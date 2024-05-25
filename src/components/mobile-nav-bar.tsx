@@ -50,6 +50,7 @@ export const MobileNavBar = ({
             href='/'
             iconSize='h-full'
             linkClassName='h-full'
+            label='home'
           />
         </span>
         <span className='flex h-full items-center mr-8'>
@@ -92,18 +93,21 @@ export const MobileNavBar = ({
                   href='https://github.com/AsianHam'
                   newTab
                   iconSize='h-6 w-6'
+                  label='github'
                 />
                 <NavItem
                   icon={<Linkedin className='text-iron w-full h-full' />}
                   href='https://linkedin.com/in/abrahamoh'
                   newTab
                   iconSize='h-5 w-5'
+                  label='linkedin'
                 />
                 <NavItem
                   icon={<Codepen className='text-iron w-full h-full' />}
                   href='https://codepen.io/Abraham-Oh'
                   newTab
                   iconSize='h-6 w-6'
+                  label='codepen'
                 />
               </span>
             </div>
