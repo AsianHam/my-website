@@ -14,12 +14,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'spicy-mix': '#74483F',
         iron: '#DCDEDD',
         alabaster: '#F9F9F9',
-        masala: '#4C4541',
-        'outer-space': '#1D2625',
-        'regent-gray': '#929AA2',
         shark: '#212428',
         'torch-red': '#ff014f',
       },

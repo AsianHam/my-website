@@ -7,10 +7,12 @@ export const HorizontalNavBar = ({
   experienceRef,
   portfolioRef,
   contactRef,
+  isHomePage = true,
 }: {
   experienceRef: RefObject<HTMLElement>;
   portfolioRef: RefObject<HTMLElement>;
   contactRef: RefObject<HTMLElement>;
+  isHomePage?: boolean;
 }) => {
   const handleClick = (ref: RefObject<HTMLElement>, hash: string) => {
     if (history.pushState) {
@@ -31,29 +33,40 @@ export const HorizontalNavBar = ({
           label='home'
         />
       </span>
-      <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
-        <button
-          onClick={() => handleClick(experienceRef, '#experience')}
-          className='hover:text-torch-red'
-        >
-          Experience
-        </button>
-        <button
-          onClick={() => handleClick(portfolioRef, '#portfolio')}
-          className='hover:text-torch-red'
-        >
-          Portfolio
-        </button>
-        <button
-          onClick={() => handleClick(contactRef, '#contact-me')}
-          className='hover:text-torch-red'
-        >
-          Contact
-        </button>
-        <Link href='/components' className='hover:text-torch-red'>
-          Components
-        </Link>
-      </div>
+      {isHomePage ? (
+        <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
+          <button
+            onClick={() => handleClick(experienceRef, '#experience')}
+            className='hover:text-torch-red'
+          >
+            Experience
+          </button>
+          <button
+            onClick={() => handleClick(portfolioRef, '#portfolio')}
+            className='hover:text-torch-red'
+          >
+            Portfolio
+          </button>
+          <button
+            onClick={() => handleClick(contactRef, '#contact-me')}
+            className='hover:text-torch-red'
+          >
+            Contact
+          </button>
+          <Link href='/components' className='hover:text-torch-red'>
+            Components
+          </Link>
+        </div>
+      ) : (
+        <div className='flex h-full items-center gap-4 pr-8 text-iron text-lg'>
+          <Link href='/#experience' className='hover:text-torch-red'>
+            Experience
+          </Link>
+          <Link href='/#portfolio' className='hover:text-torch-red'>Portfolio</Link>
+          <Link href='/#contact-me' className='hover:text-torch-red'>Contact</Link>
+          <Link href='/components' className='hover:text-torch-red'>Components</Link>
+        </div>
+      )}
     </nav>
   );
 };
