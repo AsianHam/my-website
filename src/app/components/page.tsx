@@ -1,5 +1,6 @@
 'use client';
 
+import { ColorDisplay } from '@/components/color-display';
 import { HorizontalNavBar } from '@/components/horizontal-nav-bar';
 import { MobileNavBar } from '@/components/mobile-nav-bar';
 import { useRef } from 'react';
@@ -38,16 +39,33 @@ const ComponentsPage = () => {
             <span className='flex bg-neutral-800 py-16 border-t border-b border-iron border-opacity-60'>
               <h2 className='text-iron text-5xl px-30 font-semibold'>Colors</h2>
             </span>
-            <div className='px-30 py-16'>
-              <div className='flex flex-col justify-center w-fit'>
-                <div className='flex rounded-full h-20 w-20 bg-torch-red border border-iron border-opacity-60' />
-                <h3 className='flex text-lg text-iron pt-4 self-center'>
-                  Torch Red
-                </h3>
-                <h4 className='flex text-lg text-iron opacity-60 self-center'>
-                  #FF014F
-                </h4>
-              </div>
+            <div className='flex w-full px-30 py-16 flex-row justify-evenly'>
+              <ColorDisplay
+                colorClassName='bg-torch-red'
+                colorName='Torch Red'
+                colorHex='#FF014F'
+              />
+              <ColorDisplay
+                colorClassName='bg-iron'
+                colorName='Iron'
+                colorHex='#DCDEDD'
+              />
+              <ColorDisplay
+                colorClassName='bg-alabaster'
+                colorName='Alabaster'
+                colorHex='#F9F9F9'
+              />
+              <ColorDisplay
+                colorClassName='bg-shark'
+                colorName='Shark'
+                colorHex='#212428'
+              />
+              <ColorDisplay
+                colorClassName='bg-neutral-800'
+                colorName='Neutral'
+                colorHex='#262626'
+                circleText='800'
+              />
             </div>
           </div>
           <div className='w-full'>
