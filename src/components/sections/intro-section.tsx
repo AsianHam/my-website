@@ -1,9 +1,10 @@
 import { DeveloperTyping } from '../developer-typing';
+import { Parallax } from '../parallax';
 import Image from 'next/image';
 
 export const IntroSection = () => (
   <section className='w-full h-auto 768:h-screen'>
-    <div className='flex w-full h-full flex-col justify-center items-center 768:inline-flex 768:flex-row 768:py-0 1440:px-40 mb-28'>
+    <Parallax className='flex w-full h-full flex-col justify-center items-center 768:inline-flex 768:flex-row 768:py-0 1440:px-40 mb-28'>
       <div className='flex flex-col mt-28 768:mt-0 h-fit 768:h-full gap-4 justify-center w-full 768:w-2/3'>
         <h1 className='text-alabaster text-2xl'>Hi, my name is</h1>
         <h2 className='text-7xl 1440:text-8xl text-torch-red font-semibold'>
@@ -25,6 +26,6 @@ export const IntroSection = () => (
           </span>
         </div>
       </div>
-    </div>
+    </Parallax>
   </section>
 );
