@@ -4,7 +4,7 @@ import { ExperienceCard } from "../experience-card";
 export const ExperienceSection = forwardRef<HTMLElement>((_props, ref) => (
   <section
     id="experience"
-    className="flex flex-col justify-center w-full h-full pt-30"
+    className="flex flex-col justify-center w-full h-full pt-30 overflow-hidden"
     ref={ref}
   >
     <h2 className="768:pl-16 flex text-torch-red text-4xl 1440:text-5xl">
